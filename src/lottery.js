@@ -1,13 +1,14 @@
 /****
-*
-* @date 2015/12/17
-* @author Jack Fan
-* @desc 手机h5版9宫格抽奖小游戏 v0.1 (依赖zepto.js)
-* 
-* ***/
-;(function(){
-	
-	var LTY = {};
+ *
+ * @date 2015/12/17
+ * @author Jack Fan
+ * @desc 手机h5版9宫格抽奖小游戏 v0.1 (依赖zepto.js)
+ * 
+ * ***/
+;
+(function() {
+
+    var LTY = {};
 
     // 默认配置
     LTY.Conf = {
@@ -15,15 +16,15 @@
         antid: 0,
         i: 0,
         d: 0,
-        ptag: "#golf",  // 礼品池ID
-        znum: 3,        // 轮播圈数
-        speed: 100,     // 轮播速度
-        winindex: 1     // 中奖位置(1到9)
+        ptag: "#golf", // 礼品池ID
+        znum: 3, // 轮播圈数
+        speed: 100, // 轮播速度
+        winindex: 1 // 中奖位置(1到9)
 
     };
-	
+
     // 销毁动画id
-    LTY.destroy_antid = function(){
+    LTY.destroy_antid = function() {
 
         clearTimeout(LTY.Conf.antid);
         LTY.Conf.d = 0;
@@ -32,9 +33,9 @@
     };
 
     // 抽奖轮播动画
-    LTY.lottery_animation = function(){
+    LTY.lottery_animation = function() {
 
-        LTY.Conf.antid = setTimeout(function(){
+        LTY.Conf.antid = setTimeout(function() {
 
             LTY.lottery_animation();
 
@@ -56,9 +57,9 @@
     };
 
     // 初始化抽奖
-    LTY.lottery  = function(options){
+    LTY.lottery = function(options) {
 
-        LTY.Conf = $.extend({},LTY.Conf,options);
+        LTY.Conf = $.extend({}, LTY.Conf, options);
         LTY.destroy_antid();
         LTY.lottery_animation();
 
