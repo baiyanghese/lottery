@@ -3,16 +3,16 @@
     overflow: hidden;
 }
 .golfpool {
-    width: 18rem;
-    height: 17.99rem;
-    margin: 5rem auto 2rem auto;
+    width: 21rem;
+    height: 20.99rem;
+    margin: 8rem auto 4rem auto;
     border: 1px solid #ccc;
 }
 .golfpool span {
     position: relative;
     display: block;
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     float: left;
 }
 .golfpool span em.active {
@@ -63,4 +63,16 @@
 .golfpool span img,
 .user-action a img {
 	width: 100%;
+}
+.ercode {
+    position: fixed;
+    top: 180px;
+    right: 150px;
+    width: 9rem;
+    margin: 2rem auto;
+    font-size: 0.8rem;
+    color: #fff;
+}
+.ercode img {
+    width: 100%;
 }

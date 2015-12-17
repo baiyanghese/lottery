@@ -7,6 +7,22 @@
 * ***/
 $(function(){
 
+	// 判断是否为移动端
+	function is_mobile_agent () {
+
+        return (/iphone|ipod|android.*mobile|windows.*phone|blackberry.*mobile/i.test(
+            window.navigator.userAgent.toLowerCase()
+        ));
+
+    };
+
+    if (!is_mobile_agent()) {
+
+    	$(".ercode").removeClass("js-ds-none");
+
+    }
+
+
 	// 这只是一个demo而已，根据商品id获取位置
 	$("#start").click(function(){
 
