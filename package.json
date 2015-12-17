@@ -1,0 +1,27 @@
+{
+  "name": "lottery",
+  "version": "0.1.0",
+  "description": "一个手机版的抽奖小插件",
+  "main": "lottery.js",
+  "file": "lottery",
+  "directories": {
+    "example": "一个手机版的抽奖demo"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baiyanghese/lottery.git"
+  },
+  "author": "Jack Fan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baiyanghese/lottery/issues"
+  },
+  "homepage": "https://github.com/baiyanghese/lottery#readme",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "^0.2.7"
+  }
+}
